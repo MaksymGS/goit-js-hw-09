@@ -18,8 +18,7 @@ const fp = flatpickr(dateTime, {
   minuteIncrement: 1,
   onClose(selectedDates) {
     console.log(selectedDates[0]);
-    fixedDate = selectedDates[0];
-    if (new Date().getTime() < selectedDates[0].getTime()) {
+       if (new Date().getTime() < selectedDates[0].getTime()) {
       start.disabled = false;
     } else {
       start.disabled = true;

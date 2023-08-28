@@ -18,7 +18,7 @@ function handlerClick(evt) {
       startBtn.disabled = true;
       stopBtn.disabled = false;
 
-      changeColor = setInterval(() => {
+      const changeColor = setInterval(() => {
         document.body.style.backgroundColor = getRandomHexColor();
       }, 1000);
       break;
