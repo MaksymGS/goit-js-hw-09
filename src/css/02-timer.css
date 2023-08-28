@@ -1,0 +1,28 @@
+.timer {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 20px;
+}
+.field {
+  width: 70px;
+  padding: 5px 5px;
+  background-color: aquamarine;
+  border-radius: 10%;
+  text-align: center;
+}
+.value {
+  font-size: 36px;
+  font-weight: 500;
+}
+#datetime-picker {
+  display: inline-block;
+  width: 310px;
+  text-align: center;
+  font-size: 20px;
+  
+}
+button {
+  font-size: 20px;
+}
