@@ -11,14 +11,14 @@ startBtn.addEventListener('click', handlerClick);
 stopBtn.addEventListener('click', handlerClick);
 
 stopBtn.disabled = true;
-
+let changeColor = null;
 function handlerClick(evt) {
   switch (evt.target.dataset) {
     case startBtn.dataset:
       startBtn.disabled = true;
       stopBtn.disabled = false;
 
-      const changeColor = setInterval(() => {
+      changeColor = setInterval(() => {
         document.body.style.backgroundColor = getRandomHexColor();
       }, 1000);
       break;

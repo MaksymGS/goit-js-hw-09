@@ -34,7 +34,7 @@ function handlerClick() {
   start.disabled = true;
   dateTime.disabled = true;
 
-  counter = setInterval(() => {
+  let counter = setInterval(() => {
     const currentTime = new Date().getTime();
     const leftTime = fp.selectedDates[0].getTime() - currentTime;
     const { days, hours, minutes, seconds } = convertMs(leftTime);
